@@ -27,7 +27,7 @@ const Header = () => {
 
         {/* Contact Button */}
         <div className="hidden md:flex items-center space-x-2 text-gray-700">
-          <Link href="/contact">
+          <Link href="/booking">
             <Button className="bg-blue-600">Book Now </Button>
           </Link>
         </div>

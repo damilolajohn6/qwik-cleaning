@@ -2,6 +2,7 @@
 
 import { ChevronDown } from "lucide-react";
 import Header from "./Header";
+import { Button } from "./ui/button";
 
 const HeroSection = () => {
   return (
@@ -36,9 +37,9 @@ const HeroSection = () => {
                 </select>
                 <ChevronDown className="absolute right-4 top-1/2 transform -translate-y-1/2 text-black pointer-events-none" />
               </div>
-              <button className="bg-blue-600 text-white px-6 py-4 rounded-md shadow-md font-semibold hover:bg-blue-700 transition">
+              <Button className="bg-blue-600 text-white px-6 py-4 rounded-md shadow-md font-semibold hover:bg-blue-700 transition">
                 Book Now
-              </button>
+              </Button>
             </div>
           </div>
 
