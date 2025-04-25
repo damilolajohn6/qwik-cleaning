@@ -35,14 +35,14 @@ const GetQuoteForm = () => {
   };
 
   return (
-    <section className="container mx-auto py-8 px-4 md:px-12">
+    <section className="container mx-auto py-8 px-4 sm:px-6 md:px-12">
       <div className="bg-white rounded-lg shadow-md p-6 max-w-lg mx-auto">
         <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
           Request a Free Quote
         </h2>
 
         <form onSubmit={handleSubmit}>
-         
+          {/* Service Type */}
           <div className="mb-4">
             <label
               htmlFor="serviceType"
@@ -62,6 +62,7 @@ const GetQuoteForm = () => {
             />
           </div>
 
+          {/* Space Size */}
           <div className="mb-4">
             <label
               htmlFor="spaceSize"
@@ -81,7 +82,7 @@ const GetQuoteForm = () => {
             />
           </div>
 
-         
+          {/* Your Name */}
           <div className="mb-4">
             <label
               htmlFor="name"
@@ -101,7 +102,7 @@ const GetQuoteForm = () => {
             />
           </div>
 
-          
+          {/* Email Address */}
           <div className="mb-4">
             <label
               htmlFor="email"
@@ -121,12 +122,13 @@ const GetQuoteForm = () => {
             />
           </div>
 
+          {/* Phone Number */}
           <div className="mb-6">
             <label
               htmlFor="phone"
               className="block text-gray-700 text-sm font-bold mb-2"
             >
-              Phone Number 
+              Phone Number
             </label>
             <input
               type="tel"
@@ -139,6 +141,7 @@ const GetQuoteForm = () => {
             />
           </div>
 
+          {/* Additional Details */}
           <div className="mb-6">
             <label
               htmlFor="details"
@@ -151,12 +154,13 @@ const GetQuoteForm = () => {
               name="details"
               value={formData.details}
               onChange={handleChange}
-              rows="4" 
+              rows="4"
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Tell us more about what you need..."
             ></textarea>
           </div>
 
+          {/* Submit Button */}
           <div className="flex items-center justify-center">
             <Button
               type="submit"

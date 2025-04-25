@@ -1,14 +1,13 @@
-
-import React from 'react';
-import StatisticItem from './StatisticItem';
+import React from "react";
+import StatisticItem from "./StatisticItem";
 
 const StatisticsSection = () => {
   return (
-    <section className="container mx-auto py-8 px-4">
-      <div className="flex flex-col md:flex-row justify-around items-center gap-8">
-        <StatisticItem value="50+" label="Cleaners" />
-        <StatisticItem value="15%" label="User Satisfaction" /> 
-        <StatisticItem value="50+" label="Cleaners" /> 
+    <section className="py-12 px-4 sm:px-6 md:px-20 bg-gray-100">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+        <StatisticItem value="50" label="Cleaners" />
+        <StatisticItem value="98" label="User Satisfaction" />
+        <StatisticItem value="1000" label="Happy Homes" />
       </div>
     </section>
   );
